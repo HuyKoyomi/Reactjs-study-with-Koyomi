@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------------------------------------------------
+                    STUDY-WITH-KOYOMI
+
+# date: 16-01-2024
+# author: Koyomi
+# library: react-google-recaptcha
+# doc: https://www.npmjs.com/package/react-google-recaptcha
+/*------------------------------------------------------------------------------------------------------------------------
+                    INFORMATION
+
+# site key = "6Ld_dlIpAAAAAHqv-uzbCY42O5_DVeuM9944DPN_"
+# secret key = "6Ld_dlIpAAAAAKO7aa6juOoRyhVe-w4xkOV8n5cY"
+/*------------------------------------------------------------------------------------------------------------------------
+                    CHI TIẾT CÁC BƯỚC
+
++ B1: Cài đặt thư viện
+    install : yarn add react-google-recaptcha
++ B2: Tạo account trên "https://www.google.com/recaptcha/about/"
+    có được "site key" và "secret key"
+/*------------------------------------------------------------------------------------------------------------------------
+                    MỘT SỐ THUỘC TÍNH CỦA COMPONENT 
+
++ asyncScriptOnLoad - func  - gọi lại tùy chọn khi tập lệnh google recaptcha đã được tải
++ badge             - enum  - [bottomright, bottomleft, inline] . Vị trí huy hiệu reCAPTCHA. Chỉ dành cho reCAPTCHA vô hình           
++ hl                - str   - tùy chọn đặt tham số hl, cho phép sử dụng hình ảnh xác thực từ các ngôn ngữ khác nhau, xem reCAPTCHA hl
++ isolated          - bool  - tùy chọn Để chủ sở hữu plugin không can thiệp vào quá trình cài đặt reCAPTCHA hiện có trên một trang. Nếu đúng, phiên bản reCAPTCHA này sẽ là một phần của không gian ID riêng biệt. (mặc định: false)
++ onChange 
++ onErrored         - func  - gọi lại tùy chọn khi thử thách bị lỗi, rất có thể là do sự cố mạng.     
++ onExpired         - func  - gọi lại tùy chọn khi thử thách hết hạn và người dùng phải thực hiện lại. Theo mặc định, nó sẽ gọi onChange bằng null để biểu thị lệnh gọi lại đã hết hạn.
++ sitekey           - str   - key
++ size              - enum  - [compact, normal, invisible] cho phép bạn thay đổi kích thước hoặc thực hiện một hình ảnh xác thực vô hình
++ stoken            - str   - tùy chọn đặt tham số stoken, cho phép sử dụng hình ảnh xác thực từ các miền khác nhau, xem mã thông báo bảo mật reCAPTCHA
++ tabindex          - num   - tùy chọn Tabindex trên phần tử
++ type              - enum  - [image, audio]
++ theme             - enum  - [light, dark]
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
